@@ -50,11 +50,15 @@ html,body {
 
 .secondary-images div {
   flex: 1 0 0;
-  margin: .2em 0 .2em .2em ;
+  margin: 0 .1em;
 }
 
 .secondary-images div:first-child {
   margin-left: 0;
+}
+
+.secondary-images div:last-child {
+  margin-right: 0;
 }
 
 
