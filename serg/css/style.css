@@ -15,8 +15,8 @@ html,body {
   grid-template-areas:  
   "main-image description"
   "secondary-images secondary-images";
-  grid-gap: .8em;
-  margin: .8em;
+  /* grid-gap: .8em;
+  margin: .8em; */
 
   border: 2px solid red;
 }
