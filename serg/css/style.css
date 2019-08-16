@@ -12,29 +12,28 @@ html,body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 1fr;
+  grid-gap: .8em;
+  margin: .8em;
   grid-template-areas:  
   "main-image description"
   "secondary-images secondary-images";
-  /* grid-gap: .8em;
-  margin: .8em; */
 
   border: 2px solid yellow;
 }
 
-.container :nth-child(1) {
+.main-image {
   background-color: aquamarine;
 
   grid-area: main-image;
 }
 
-.container :nth-child(2) {
+.description {
   background-color: rgb(127, 136, 255);
 
   grid-area: description;
 }
 
-.container :nth-child(3) {
-  background-color: rgb(189, 134, 33);
+.secondary-images {
   grid-area: secondary-images;
   
   display: flex;
@@ -60,8 +59,6 @@ html,body {
 .secondary-images div:last-child {
   margin-right: 0;
 }
-
-
 
 .secondary-images img {
   width: 100%;
