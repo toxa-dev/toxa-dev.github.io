@@ -18,7 +18,7 @@ html,body {
   /* grid-gap: .8em;
   margin: .8em; */
 
-  border: 2px solid red;
+  border: 2px solid yellow;
 }
 
 .container :nth-child(1) {
