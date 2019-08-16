@@ -91,3 +91,11 @@ img {
     height: 100px;
   } */
 }
+
+
+/* Media Queries */
+@media(max-width: 600px) {
+  .secondary-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
