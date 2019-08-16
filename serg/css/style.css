@@ -17,6 +17,8 @@ html,body {
   "secondary-images secondary-images";
   grid-gap: .8em;
   margin: .8em;
+
+  border: 2px solid red;
 }
 
 .container :nth-child(1) {
@@ -51,8 +53,8 @@ html,body {
   margin: .2em 0 .2em .2em ;
 }
 
-.secondary-images div:last-child{
-  margin-right: .2em;
+.secondary-images div:first-child {
+  margin-left: 0;
 }
 
 
