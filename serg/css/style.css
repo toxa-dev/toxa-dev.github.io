@@ -34,7 +34,7 @@ html,body {
 }
 
 .container :nth-child(3) {
-
+  background-color: rgb(189, 134, 33);
   grid-area: secondary-images;
   
   display: flex;
