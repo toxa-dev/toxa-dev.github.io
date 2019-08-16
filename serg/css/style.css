@@ -18,7 +18,7 @@ html,body {
   "main-image description"
   "secondary-images secondary-images";
 
-  border: 2px solid brown;
+  border: 2px solid red;
 }
 
 .main-image {
@@ -62,7 +62,7 @@ html,body {
 
 .secondary-images img {
   width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  height: 8em;
+  /* max-width: 100%;
+  max-height: 100%; */
 }
