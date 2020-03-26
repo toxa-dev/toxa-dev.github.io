@@ -19,7 +19,7 @@ body {
   height: var(--nav-bar-height);
   user-select: none;
   /*transition: height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);*/
-  transition: 1s;
+  transition: 0.5s;
   overflow: hidden;
   position: relative;
 }
@@ -83,13 +83,13 @@ body {
   /*left: 4.805px;*/
 }
 
-.nav-icon span:nth-child(1) {
-  top: var(--nav-span-first);
+.nav-icon.initial span:nth-child(1) {
+  top: 15px !important;
   /*11px*/
 }
 
-.nav-icon span:nth-child(2) {
-  top: var(--nav-span-second);
+.nav-icon.initial span:nth-child(2) {
+  top: 25px !important;
   /*21px*/
 }
 .nav-icon span:nth-child(3) {
@@ -102,21 +102,29 @@ body {
 }
 
 .nav-icon.active span:nth-child(1) {
-  top: 21px;
-  width: 0;
+  top: 18.5px;
 }
 
 .nav-icon.active span:nth-child(2) {
+  top: 18.5px;
+}
+
+.nav-icon.active-two span:nth-child(1) {
   transform: rotate(45deg);
 }
 
-.nav-icon.active span:nth-child(3) {
+.nav-icon.active-two span:nth-child(2) {
   transform: rotate(-45deg);
 }
 
-.nav-icon.active span:nth-child(4) {
-  top: 21px;
-  width: 0;
+.nav-icon.active-three span:nth-child(1) {
+  top: 18.5px;
+  transform: none;
+}
+
+.nav-icon.active-three span:nth-child(2) {
+  top: 18.5px;
+  transform: none;
 }
 
 .nav-expand {
