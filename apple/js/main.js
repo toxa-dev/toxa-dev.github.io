@@ -1,23 +1,23 @@
-let navIcon = document.getElementById("nav-icon");
-let menuBigDevices = document.getElementById("menu-big-devices");
-let menuBigDevicesLis = document.querySelectorAll("#menu-big-devices li");
-let menuItem1 = document.getElementById("logo-apple");
-let menuItem2 = document.getElementById("search");
-let menuItem3 = document.getElementById("bag");
-let menuContent = document.querySelector(".menu-content");
+let navIcon = document.querySelector(".nav-icon");
+let expand = document.querySelector(".nav-expand");
+let expandLi = document.querySelectorAll(".nav-expand li");
+let navBar = document.querySelector(".nav-bar");
 
 navIcon.addEventListener("click", function(e) {
-  menuContent.classList.toggle("full-height");
-  navIcon.classList.toggle("open");
+  navIcon.classList.toggle("active");
+  expand.classList.toggle("expand-active");
 
-  menuBigDevices.classList.toggle("menu-big-devices");
-  menuBigDevices.classList.toggle("full-screen");
-
-  for (let i = 0; i < menuBigDevicesLis.length; i++) {
-    menuBigDevicesLis[i].classList.toggle("asdf");
+  for (let i = 0; i < expandLi.length; i++) {
+    if (expandLi[i].style.opacity == 0) {
+      expandLi[i].style.opacity = 1;
+    } else {
+      expandLi[i].style.opacity = 0;
+    }
   }
 
-  menuItem1.style.setProperty("display", "none");
-  menuItem2.style.setProperty("display", "none");
-  menuItem3.style.setProperty("display", "none");
+  if (navBar.style.cssText == "height: 100vh;") {
+    navBar.style.cssText = "height: 44px;";
+  } else {
+    navBar.style.cssText = "height: 100vh;";
+  }
 });
