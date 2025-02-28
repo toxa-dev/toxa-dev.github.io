@@ -1,7 +1,3 @@
-// To automatically change the url to json file based on where i run the project
-const localURL = "./projects.json";
-const githubURL = "https://toxa-dev.github.io/repo-of-repos/projects.json";
-
 const projectsListBasic = document.getElementById("projects-basic");
 const projectsListIntermediate = document.getElementById(
   "projects-intermediate"
@@ -13,7 +9,7 @@ const projectsURL =
   window.location.hostname === "toxa-dev.github.io" ? githubURL : localURL;
 
 // Fetch the JSON data
-fetch(projectsURL)
+fetch("projects.json")
   .then((response) => response.json())
   .then((data) => {
     // Loop through the projects and create HTML for each
