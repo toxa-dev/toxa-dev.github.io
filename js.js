@@ -48,7 +48,7 @@ fetch("./projects.json")
   })
   .catch((error) => console.error("Error fetching projects:", error));
 
-const buttons = document.querySelectorAll("[data-level]");
+const buttons = document.querySelector("#buttons");
 
 const projectLists = {
   basic: {
@@ -82,8 +82,9 @@ function showProjects(level) {
 }
 
 // Attach event listeners
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    showProjects(button.dataset.level);
-  });
+
+buttons.addEventListener("click", (event) => {
+  if (event.target.dataset.level) {
+    showProjects(event.target.dataset.level);
+  }
 });
