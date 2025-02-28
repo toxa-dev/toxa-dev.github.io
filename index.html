@@ -1,163 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="refresh" content="0; url=https://toxa-dev.github.io/repo-of-repos/">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link href="./styles/output.css" rel="stylesheet" />
 
-  <!-- Fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
-  <script src="js/script.js" defer></script>
-  
-  <title>Learning javaScript</title>
-</head>
-<body id="body">
-  <header class="primary-header">
-    <nav class="primary-nav">
-      <ul>
-        <li><a href="#">Projects</li></a>
-        <li><a href="#">Skills</li></a>
-        <li><a href="#">SomeThing</li></a>
-        <li><a href="#">SomeThing</li></a>
-        <li><a href="#" class="home">Home</li></a>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="projects">
-      <article class="project">
-        <h3 class="project-heading text-center">Project 1</h3>
+    <script src="js.js" defer></script>
 
-        <section class="project-showcase">
-          <p class="project-showcase-description">Lorem ipsum dolor sit amet consec tetur adi pisi.</p>
-          <img src="img/project.jpg" alt="">
-        </section>
-        
-        <section class="project-skills">
-          <h4 class="project-skills-heading display-inline">Used Skills:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">html</li>
-            <li class="display-inline">css</li>
-            <li class="display-inline">javaScript</li>
-          </ul>
+    <title>Toxa-dev. Repo Of Repos</title>
+  </head>
+
+  <body
+    class="bg-black min-h-screen text-white font-[inter] font-[outfit] grid grid-cols-[auto_1fr] max-[800px]:grid-cols-[1fr] grid-rows-[min-content]"
+  >
+    <header class="order-[-2] col-span-full">
+      <h1
+        class="text-[clamp(1.5rem,4vw,2.5rem)] font-semibold text-[#0077cc] text-center"
+      >
+        Links to Projects<br />
+        on GitHub
+      </h1>
+    </header>
+
+    <main
+      class="bg-[#111] p-5 rounded-xl shadow-[0_4px_20px_rgba(255,255,255,0.1)] max-[650px]:p-[10px]"
+    >
+      <article
+        class="shadow-[0_4px_15px_rgba(255,255,255,0.05)] p-5 rounded-lg max-[650px]:p-[10px]"
+      >
+        <section>
+          <ul
+            id="projects-basic"
+            class="grid grid-cols-[repeat(auto-fit,minmax(275px,max-content))] gap-5 justify-center"
+          ></ul>
         </section>
 
-        <section class="project-technology">
-          <h4 class="project-technology-heading display-inline">Used Technology:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">gitHub</li>
-            <li class="display-inline">Technology 2</li>
-          </ul>
+        <section>
+          <ul
+            id="projects-intermediate"
+            class="hidden flex flex-wrap gap-5 max-[610px]:justify-center"
+          ></ul>
+        </section>
+
+        <section>
+          <ul
+            id="projects-advanced"
+            class="hidden flex flex-wrap gap-5 max-[610px]:justify-center"
+          ></ul>
         </section>
       </article>
-      <article class="project">
-        <h3 class="project-heading text-center">Project 1</h3>
+    </main>
 
-        <section class="project-showcase">
-          <p class="project-showcase-description">Lorem ipsum dolor sit amet consec tetur adi pisi.</p>
-          <img src="img/project.jpg" alt="">
-        </section>
-        
-        <section class="project-skills">
-          <h4 class="project-skills-heading display-inline">Used Skills:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">html</li>
-            <li class="display-inline">css</li>
-            <li class="display-inline">javaScript</li>
-          </ul>
-        </section>
-
-        <section class="project-technology">
-          <h4 class="project-technology-heading display-inline">Used Technology:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">gitHub</li>
-            <li class="display-inline">Technology 2</li>
-          </ul>
-        </section>
-      </article>
-      <article class="project">
-        <h3 class="project-heading text-center">Project 1</h3>
-
-        <section class="project-showcase">
-          <p class="project-showcase-description">Lorem ipsum dolor sit amet consec tetur adi pisi.</p>
-          <img src="img/project.jpg" alt="">
-        </section>
-        
-        <section class="project-skills">
-          <h4 class="project-skills-heading display-inline">Used Skills:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">html</li>
-            <li class="display-inline">css</li>
-            <li class="display-inline">javaScript</li>
-          </ul>
-        </section>
-
-        <section class="project-technology">
-          <h4 class="project-technology-heading display-inline">Used Technology:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">gitHub</li>
-            <li class="display-inline">Technology 2</li>
-          </ul>
-        </section>
-      </article>
-      <article class="project">
-        <h3 class="project-heading text-center">Project 1</h3>
-
-        <section class="project-showcase">
-          <p class="project-showcase-description">Lorem ipsum dolor sit amet consec tetur adi pisi.</p>
-          <img src="img/project.jpg" alt="">
-        </section>
-        
-        <section class="project-skills">
-          <h4 class="project-skills-heading display-inline">Used Skills:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">html</li>
-            <li class="display-inline">css</li>
-            <li class="display-inline">javaScript</li>
-          </ul>
-        </section>
-
-        <section class="project-technology">
-          <h4 class="project-technology-heading display-inline">Used Technology:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">gitHub</li>
-            <li class="display-inline">Technology 2</li>
-          </ul>
-        </section>
-      </article>
-      <article class="project">
-        <h3 class="project-heading text-center">Project 1</h3>
-
-        <section class="project-showcase">
-          <p class="project-showcase-description">Lorem ipsum dolor sit amet consec tetur adi pisi.</p>
-          <img src="img/project.jpg" alt="">
-        </section>
-        
-        <section class="project-skills">
-          <h4 class="project-skills-heading display-inline">Used Skills:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">html</li>
-            <li class="display-inline">css</li>
-            <li class="display-inline">javaScript</li>
-          </ul>
-        </section>
-
-        <section class="project-technology">
-          <h4 class="project-technology-heading display-inline">Used Technology:</h4>
-          <ul class="display-inline">
-            <li class="display-inline">gitHub</li>
-            <li class="display-inline">Technology 2</li>
-          </ul>
-        </section>
-      </article>
-    </section>
-  </main>
-  <footer>@ Microsoft Corporation</footer>
-</body>
+    <aside
+      class="order-[-1] mx-[15px] flex flex-col gap-4 max-[800px]:mt-[10px] max-[800px]:flex-row max-[800px]:justify-center h-fit"
+    >
+      <button
+        id="btn-basic"
+        class="border-white bg-[#0077cc] hover:bg-[#0a90ef] text-white px-5 py-2 rounded-lg transition active:scale-95 cursor-pointer border-[2px] border-[#0a90ef]"
+        data-level="basic"
+      >
+        Basic
+      </button>
+      <button
+        id="btn-intermediate"
+        class="bg-[#0077cc] hover:bg-[#0a90ef] text-white px-5 py-2 rounded-lg transition active:scale-95 cursor-pointer border-[2px] border-[#0a90ef]"
+        data-level="intermediate"
+      >
+        Intermediate
+      </button>
+      <button
+        id="btn-advanced"
+        class="bg-[#0077cc] hover:bg-[#0a90ef] text-white px-5 py-2 rounded-lg transition active:scale-95 cursor-pointer border-[2px] border-[#0a90ef]"
+        data-level="advanced"
+      >
+        Advanced
+      </button>
+    </aside>
+    <footer
+      class="text-center mt-10 pt-5 border-t border-[#333] text-[#BBB] col-span-full"
+    >
+      <p>
+        Me at
+        <a
+          href="https://github.com/Toxa-dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-[#0077cc] hover:underline focus:underline"
+          >GitHub</a
+        >
+      </p>
+      <p>Last updated: 2025</p>
+    </footer>
+  </body>
 </html>

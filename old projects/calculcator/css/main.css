@@ -1,0 +1,119 @@
+body {
+  background-color: rgb(51, 173, 230);
+}
+
+.container {
+  width: 270px;
+  margin: 3em auto;
+  background-color: rgb(182, 182, 182);
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5em 1.5em 1.5em 1.5em 1.5em;
+  grid-gap: 2px;
+  grid-template-areas:
+    "plus minus Multiplication divide"
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero delimeter AC equal";
+
+  font-size: 2em;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem;
+  color: #fff;
+  background-color: #000;
+
+  font-size: 2em;
+}
+
+.output .expression {
+  margin-bottom: 0.3em;
+  font-size: 0.7em;
+}
+
+.output .result {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.input div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+.input div:hover {
+  background-color: rgb(141, 51, 224);
+}
+
+.input-sign,
+.input-reset {
+  color: #000;
+  background-color: #fff;
+}
+
+.input-operator {
+  background-color: #ccc;
+}
+
+[data="+"] {
+  grid-area: plus;
+}
+[data="-"] {
+  grid-area: minus;
+}
+[data="*"] {
+  grid-area: Multiplication;
+}
+[data="/"] {
+  grid-area: divide;
+}
+[data="1"] {
+  grid-area: one;
+}
+[data="2"] {
+  grid-area: two;
+}
+[data="3"] {
+  grid-area: three;
+}
+[data="4"] {
+  grid-area: four;
+}
+[data="5"] {
+  grid-area: five;
+}
+[data="6"] {
+  grid-area: six;
+}
+[data="7"] {
+  grid-area: seven;
+}
+[data="8"] {
+  grid-area: eight;
+}
+[data="9"] {
+  grid-area: nine;
+}
+[data="0"] {
+  grid-area: zero;
+}
+[data="AC"] {
+  grid-area: AC;
+}
+[data="."] {
+  grid-area: delimeter;
+}
+[data="="] {
+  grid-area: equal;
+  background-color: sandybrown;
+}

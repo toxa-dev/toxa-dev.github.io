@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Profile Card",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-01-profile-card-component/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-01-profile-card-component"
+  },
+  {
+    "id": 2,
+    "title": "Social Links Profile",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-02-social-links-profile/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-02-social-links-profile"
+  },
+  {
+    "id": 3,
+    "title": "NFT Preview Card",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-03-nft-preview-card-component/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-03-nft-preview-card-component"
+  },
+  {
+    "id": 4,
+    "title": "Order summary card",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-04-order-summary-component/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-04-order-summary-component"
+  },
+  {
+    "id": 5,
+    "title": "Product preview card",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-05-product-preview-card-component/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-05-product-preview-card-component"
+  },
+  {
+    "id": 6,
+    "title": "Stats preview card",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-06-stats-preview-card-component/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-06-stats-preview-card-component"
+  },
+  {
+    "id": 7,
+    "title": "Results summary",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-07-results-summary-component/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-07-results-summary-component"
+  },
+  {
+    "id": 8,
+    "title": "Recipe page",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-08-recipe-page",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-08-recipe-page"
+  },
+  {
+    "id": 9,
+    "title": "3-column-preview-card",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-09-3-column-preview-card-component/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-09-3-column-preview-card-component"
+  },
+  {
+    "id": 10,
+    "title": "QR code",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-10-qr-code-component/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-10-qr-code-component"
+  }
+]

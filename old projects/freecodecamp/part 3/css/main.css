@@ -1,0 +1,384 @@
+:root {
+  --header-height: 80px;
+  --footer-height: 80px;
+  --opacity-hover-off: 0.8;
+  --opacity-hover-on: 1;
+}
+
+html,
+body {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  max-width: 1300px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.3em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  font-weight: bold;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+.no-scroll-1 {
+  overflow: hidden !important;
+  height: 100%;
+}
+
+.no-scroll-2 {
+  overflow-y: scroll !important;
+}
+
+.height-100vh {
+  height: 100vh !important;
+}
+
+#header {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  overflow: hidden;
+  user-select: none;
+  transition: height 0.36s cubic-bezier(0.52, 0.16, 0.24, 1);
+  position: relative; /* To make #header-nav ul position: absolute*/
+}
+
+/*
+#header-nav {
+  overflow: hidden;
+}
+*/
+
+.nav-icon-container {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  width: 35px;
+  height: 20px;
+  margin: 0 10px 0 auto;
+  position: relative;
+  cursor: pointer;
+  opacity: var(--opacity-hover-off);
+}
+
+.nav-icon:hover {
+  opacity: var(--opacity-hover-on);
+}
+
+#header-nav span {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.nav-icon span:nth-child(1) {
+  top: 0px;
+  transition: top 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out;
+}
+
+.nav-icon span:nth-child(2) {
+  top: 8px;
+  transition: height 0s ease-in-out 0.2s;
+}
+
+.nav-icon span:nth-child(3) {
+  top: 16px;
+  transition: top 0.2s ease-in-out 0.2s, transform 0.2s ease-in-out;
+}
+
+/* Transitions for the bars */
+
+.transition span:nth-child(1) {
+  top: 8px;
+  transform: rotate(-45deg);
+  transition: top 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
+}
+
+.transition span:nth-child(2) {
+  height: 0 !important;
+}
+
+.transition span:nth-child(3) {
+  top: 8px;
+  transform: rotate(45deg);
+  transition: top 0.2s ease-in-out, transform 0.2s ease-in-out 0.2s;
+}
+
+#header-img {
+  height: var(--header-height);
+  margin-left: 1%;
+}
+
+#header-nav ul a {
+  display: block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 15px 0;
+  transition: border-bottom 0.2s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: var(--opacity-hover-off);
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  opacity: var(--opacity-hover-on);
+}
+
+/* #Main */
+#main {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+#main > section {
+  margin-top: 30px;
+}
+
+/* #Subscription section */
+
+#subscription {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#subscription > * {
+  margin: 12px 0;
+}
+
+#form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#email {
+  width: 300px;
+  margin-bottom: 15px;
+  padding: 5px 0;
+}
+
+#submit {
+  width: 150px;
+  padding: 10px 0;
+  background: black;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+
+#submit:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* #Vehicles section */
+
+#vehicles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+}
+
+#vehicles section {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  margin: 20px 0;
+}
+
+.vehicle-image {
+  user-select: none;
+  text-align: center;
+}
+
+.vehicle-descriptions {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.vehicle-name {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.vehicle-description {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.vehicle-start-price {
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.vehicle-price {
+  font-weight: bold;
+}
+
+/* #Commercials section */
+
+#commercials > iframe {
+  width: 100%;
+  height: 150px;
+}
+
+#commercials > iframe:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* #Dealers section */
+
+#dealers .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+#dealers .bulding-address {
+  margin-bottom: 7px;
+}
+
+#dealers .phone-number {
+  margin-bottom: 25px;
+}
+
+/* Footer of the page */
+
+#body-footer {
+  height: var(--footer-height);
+  background-color: black;
+  color: #fff;
+}
+
+#body-footer .container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#body-footer .container > * {
+  flex-basis: 100%;
+}
+
+#body-footer ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#body-footer li {
+  margin: 0 2px;
+}
+
+#body-footer li a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  opacity: var(--opacity-hover-off);
+}
+
+#body-footer li a:hover {
+  opacity: var(--opacity-hover-on);
+}
+
+#body-footer p {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Media Queries */
+
+/* Ajust the height for iframe videos */
+
+@media screen and (min-width: 500px) {
+  #commercials > iframe {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #commercials > iframe {
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #commercials > iframe {
+    height: 500px;
+  }
+}
+
+/* Menu for a big devices */
+
+@media screen and (min-width: 760px) {
+  #header-nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-icon-container {
+    display: none;
+  }
+
+  .nav-link {
+    padding: 10px;
+    transition: border-bottom 0.2s ease-in-out;
+    border: none;
+  }
+
+  .nav-link:hover {
+    border: none;
+  }
+}
+
+/* Menu list for a small devices */
+
+@media screen and (max-width: 759px) {
+  #header-nav ul {
+    position: absolute;
+    left: 50px;
+    top: 120px;
+    right: 50px;
+    display: flex;
+    flex-flow: column;
+  }
+}
