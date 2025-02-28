@@ -4,12 +4,8 @@ const projectsListIntermediate = document.getElementById(
 );
 const projectsListAdvanced = document.getElementById("projects-advanced");
 
-// Choose the correct URL based on the current location
-const projectsURL =
-  window.location.hostname === "toxa-dev.github.io" ? githubURL : localURL;
-
 // Fetch the JSON data
-fetch("projects.json")
+fetch("./projects.json")
   .then((response) => response.json())
   .then((data) => {
     // Loop through the projects and create HTML for each
