@@ -78,5 +78,13 @@
     "technologies": ["HTML", "CSS"],
     "liveSite": "https://toxa-dev.github.io/frontendmentor.io-10-qr-code-component/",
     "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-10-qr-code-component"
+  },
+  {
+    "id": 11,
+    "title": "Blog preview card",
+    "level": "Basic",
+    "technologies": ["HTML", "CSS"],
+    "liveSite": "https://toxa-dev.github.io/frontendmentor.io-11-blog-preview-card/",
+    "githubRepo": "https://github.com/toxa-dev/frontendmentor.io-11-blog-preview-card"
   }
 ]
