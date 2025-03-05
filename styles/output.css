@@ -6,7 +6,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-950: oklch(0.258 0.092 26.042);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -258,6 +257,9 @@
   .w-\[275px\] {
     width: 275px;
   }
+  .max-w-\[2500px\] {
+    max-width: 2500px;
+  }
   .flex-grow {
     flex-grow: 1;
   }
@@ -275,6 +277,12 @@
   }
   .resize {
     resize: both;
+  }
+  .auto-rows-min {
+    grid-auto-rows: min-content;
+  }
+  .grid-cols-\[1fr\] {
+    grid-template-columns: 1fr;
   }
   .grid-cols-\[auto_1fr\] {
     grid-template-columns: auto 1fr;
@@ -348,8 +356,8 @@
   .bg-black {
     background-color: var(--color-black);
   }
-  .bg-red-950 {
-    background-color: var(--color-red-950);
+  .bg-white {
+    background-color: var(--color-white);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
@@ -518,6 +526,11 @@
       grid-template-columns: 1fr;
     }
   }
+  .max-\[820px\]\:flex-col {
+    @media (width < 820px) {
+      flex-direction: column;
+    }
+  }
   .max-\[820px\]\:flex-row {
     @media (width < 820px) {
       flex-direction: row;
@@ -525,21 +538,6 @@
   }
   .max-\[820px\]\:justify-center {
     @media (width < 820px) {
-      justify-content: center;
-    }
-  }
-  .max-\[800px\]\:mt-\[10px\] {
-    @media (width < 800px) {
-      margin-top: 10px;
-    }
-  }
-  .max-\[800px\]\:flex-row {
-    @media (width < 800px) {
-      flex-direction: row;
-    }
-  }
-  .max-\[800px\]\:justify-center {
-    @media (width < 800px) {
       justify-content: center;
     }
   }

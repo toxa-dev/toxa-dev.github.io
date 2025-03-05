@@ -19,7 +19,7 @@
   </head>
 
   <body
-    class="bg-black min-h-screen text-white font-[inter] font-[outfit] grid grid-cols-[auto_1fr] max-[820px]:grid-cols-[1fr] grid-rows-[min-content]"
+    class="bg-black min-h-screen text-white font-[inter] font-[outfit] grid grid-cols-[1fr] auto-rows-min"
   >
     <header class="order-[-2] col-span-full">
       <h1
@@ -29,9 +29,9 @@
         on GitHub
       </h1>
     </header>
-
+    <div class="flex justify-center max-[820px]:flex-col">
     <main
-      class="h-fit bg-[#111] p-5 rounded-xl shadow-[0_4px_20px_rgba(255,255,255,0.1)] max-[650px]:p-[10px]"
+      class="bg-[#111] p-5 rounded-xl shadow-[0_4px_20px_rgba(255,255,255,0.1)] max-[650px]:p-[10px] max-w-[2500px] grow"
     >
       <article
         class="shadow-[0_4px_15px_rgba(255,255,255,0.05)] p-5 rounded-lg max-[650px]:p-[10px]"
@@ -85,6 +85,7 @@
         Advanced
       </button>
     </aside>
+  </div>
     <footer
       class="text-center mt-10 pt-5 border-t border-[#333] text-[#BBB] col-span-full"
     >
