@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "title": "3-column-preview-card",
+    "title": "3 column preview card",
     "level": "Basic",
     "technologies": ["HTML", "CSS"],
     "liveSite": "https://toxa-dev.github.io/frontendmentor.io-09-3-column-preview-card-component/",
