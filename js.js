@@ -36,7 +36,6 @@ fetch("./projects.json")
                       </div >
               `;
       li.classList.add(
-        "w-[275px]",
         "bg-[#1c1c1e]",
         "rounded-lg",
         "flex",
